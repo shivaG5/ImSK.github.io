@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.cont{
+    width:100%;
+    min-height:100vh;
+    background-color: #f3f5d8;
+}
+nav{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 112;
+    line-height: 80px;
+   /* background-color: whitesmoke;*/
+}
+.logo{
+    display:flex;
+    font-size:40px;
+    font-weight: 800;
+    color: #3d5353;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: #7f007f;
+}
+.navi{
+    display: flex; /*to get the all sec in 1 line howe,about,contact*/
+}
+.navi li{
+    list-style:none;
+    margin:0 15px;
+
+}
+.navi li a{
+    font-size:25px;
+    color:#3d535f;
+    letter-spacing:3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navi li:hover a,
+.links a:hover{
+    color: #7f007f;
+}
+.links a{
+    font-size:30px;
+    color:#3d535f;
+    margin:25px 10px;
+}
+.wrapper{
+    display:flex;
+    width:100%;
+    height:calc(100vh-80px);
+    justify-content:center;
+    align-items: center;
+    padding:0 10%;
+    overflow:hidden;
+}
+.wrapper::before{
+    position:absolute;
+    content:'';
+    height:600px;
+    width:600px;
+    border-radius: 50%;
+    left: -12%;
+    top:40%;
+    background:linear-gradient(50deg,#7f007f,pink);
+    animation: object 6s linear infinite;
+}
+.wrapper::after{
+    position:absolute;
+    content:'';
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    left: 35%;
+    top:12%;
+    background:linear-gradient(50deg,#7f007f,pink);
+    animation: object2 6s linear infinite;
+}
+@keyframes object {
+    50%{
+        left:-13%;
+        top:31%; /*same here*/
+    }
+    
+}
+@keyframes object2 {
+    50%{
+        left:35%;
+        top:10%;  /*these are used to move the cirecles up and down*/
+    }
+    
+}
+cols{
+    width:50%;
+}
+.cols0{
+    
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:#3d535f;
+}
+.topline::after{
+    position:absolute;
+    content:'';
+    height:4px;
+    width: 45px;
+    bottom:10px;
+    background-color: #7f007f;
+}
+h1{
+    display: block;
+    font-size:7em;
+    font-weight:900;
+    color:#3d535f;
+}
+.multiText{
+    color:#7f007f;
+    text-transform: capitalize;
+
+}
+p{
+    display: block;
+    width:90%;
+    font-size:1.2em;
+    color:#3d535f;
+}
+.btns{
+    width:100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline:none;
+    border: none;
+    cursor:pointer;
+    font-size:25px;
+    font-weight:400;
+    color:#fff;
+    background-color: #3d535f;
+    padding:8px 14px;
+    margin:40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+button:hover{
+    background-color: #7f007f;
+}
+.imgbox img{
+    position: relative;
+    height: 500%;
+    width:calc(139% - 80px);
+    top: -100px;
+    right:50px;
+    animation: animateuser 4s linear infinite;
+    
+}
+@keyframes animateuser {
+    50%{
+        right:50px;
+        top:-80px;
+    }
+    
+}
+imgbox #splash {
+    position: absolute; /* 'a' should be 'absolute' for positioning */
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Removed slanting rotation */
+    width: 160px;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    50% {
+        top: 49px;
+        left: 51%;
+        width: 15%;
+    }
+}

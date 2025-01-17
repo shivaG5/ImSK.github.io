@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="cont">
+        <nav>
+            <div class="logo">
+                folio<b>.</b>
+            </div>
+            <ul class="navi">
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+                
+            </ul>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <Coder class="multiText">Coder</span></h1> <!-- here there is <span class="multiText" u removed it to see what happen it works normally-->
+                <p>I write code, but I build dreams.Behind every program is a coder who dared to think differently.I don’t just solve problems;I create solutions.</p>
+                <div class="btns">
+                    <button>uploading resume </button>
+                    <button>Hire me</button>
+                </div>
+            </div>
+            <div class="cols cols0">
+                <div class="imgbox">
+                    <img src="" id="splash">
+                    <img src="img3.png.jpg" >
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect=new Typed(".multiText",{
+            strings:["Coder.","ML Enginner.","Learner."],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500,
+        })
+    </script>
+</body>
+</html>
